@@ -1,0 +1,14 @@
+# Set default charset
+AddDefaultCharset utf-8
+
+# Disallows others to look into directories without index file
+Options -Indexes
+
+# Activates URL rewriting
+RewriteEngine on 
+
+# Rewrite rules
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.+)$ index.php?route=$1 [L,QSA]

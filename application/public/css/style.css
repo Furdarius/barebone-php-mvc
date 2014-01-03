@@ -1,0 +1,20 @@
+.container
+{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.header
+{
+    background: #FCD5D5;
+}
+
+.content
+{
+    background: #D5FCD7;
+}
+
+.footer
+{
+    background: #D5E8FC;
+}
